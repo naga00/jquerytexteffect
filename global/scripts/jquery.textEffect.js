@@ -101,21 +101,18 @@
 
 							if (code + 100 < tcode || code - 100 > tcode) {
 								result += String.fromCharCode(code);
-								console.log(tcode, ":", result, ":", code);
 								codes[i] += (tcode - codes[i]) * 0.9;
 								continue;
 							}
 							
 							if (code + speed < tcode) {
 								result += String.fromCharCode(code);
-								console.log(tcode, ":", result, ":", code);
 								codes[i] += speed;
 								continue;
 							}
 							
 							if (code - speed > tcode) {
 								result += String.fromCharCode(code);
-								console.log(tcode, ":", result, ":", code);
 								codes[i] -= speed;
 								continue;
 							}
